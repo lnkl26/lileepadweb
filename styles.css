@@ -1,0 +1,242 @@
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(assets/my-art/BGWeb25.png);
+  background-repeat: repeat;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.slideshow-fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+    /* background-color: green; */
+}
+
+#buttons.wiggle button:hover {
+    background-color: #2e3118;
+    color: whitesmoke;
+    animation: wiggle 0.5s;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/*media queries for phone*/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-family: serif;
+    color: #5da186;
+    font-size: 35px;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  #buttons {
+    border: 30px solid transparent;
+    border-image: url(assets/my-art/borderimg.png) 250 round;
+    background-image: url(assets/my-art/divbgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  #buttons button {
+      font-family: "Ubuntu", sans-serif;
+      border: none;
+      border-radius: 15px;
+      margin-left: 2.5vw;
+      margin-right: 2.5vw;
+      padding: 1vw;
+      padding-left: 2.5vw;
+      padding-right: 2.5vw;
+      background-color: #5da186;
+      color: whitesmoke;
+      font-size: 15px;
+  }
+
+  #about-me {
+    border: 30px solid transparent;
+    border-image: url(assets/my-art/borderimg.png) 250 round;
+    background-image: url(assets/my-art/divbgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .smallcolumn {
+    width: 100%;
+  }
+
+  .smallcolumn img {
+    max-width: 100%;
+  }
+
+  .largecolumn {
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  #portfolio {
+    display: block;
+    border: 30px solid transparent;
+    border-image: url(assets/my-art/borderimg.png) 250 round;
+    background-image: url(assets/my-art/divbgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .projectimg img {
+    width: 100%;
+  }
+
+  .slideshow-container {
+    width: 100%;
+  }
+}
+
+/* desktop screen */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: serif;
+    color: #5da186;
+    font-size: 50px;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  #buttons {
+    border: 50px solid transparent;
+    border-image: url(assets/my-art/borderimg.png) 250 round;
+    background-image: url(assets/my-art/divbgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #buttons button {
+      font-family: "Ubuntu", sans-serif;
+      border: none;
+      border-radius: 25px;
+      margin-left: 2.5vw;
+      margin-right: 2.5vw;
+      padding: 1vw;
+      background-color: #5da186;
+      color: whitesmoke;
+      font-size: 20px;
+  }
+
+  #about-me {
+    border: 50px solid transparent;
+    border-image: url(assets/my-art/borderimg.png) 250 round;
+    background-image: url(assets/my-art/divbgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+  }
+
+  .smallcolumn {
+    width: 30%;
+  }
+
+  .smallcolumn img {
+    max-width: 100%;
+  }
+
+  .largecolumn {
+    width: 70%;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  #portfolio {
+    display: block;
+    border: 50px solid transparent;
+    border-image: url(assets/my-art/borderimg.png) 250 round;
+    background-image: url(assets/my-art/divbgimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .projectcolumns {
+    display: flex;
+  }
+
+  .projectimg img {
+    width: 100%;
+  }
+
+  .slideshow-container {
+    width: 60%;
+  }
+}
+
