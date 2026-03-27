@@ -22,13 +22,6 @@
   font-style: italic;
 }
 
-.fredericka-the-great-regular {
-  font-family: "Fredericka the Great", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 body {
   font-family: "Ubuntu", sans-serif;
   background-image: url(assets/my-art/BGWeb25.png);
@@ -229,6 +222,12 @@ body {
 
   .projectcolumns {
     display: flex;
+  }
+
+  .projectimg {
+    padding: 1.5vw;
+    max-width: 500px;
+    min-width: 200px;
   }
 
   .projectimg img {
